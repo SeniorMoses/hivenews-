@@ -17,8 +17,8 @@ app.add_middleware(
 )
 
 
-app.include_router(auth_router.router)
-app.include_router(news_router.router)
+app.include_router(auth.router)
+app.include_router(news.router)
 
 @app.get("/")
 def home():
