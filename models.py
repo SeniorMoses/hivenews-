@@ -29,6 +29,6 @@ class NewsModel(Base):
     __tablename__ = "news"
 
     id = Column(Integer, primary_key=True, index=True)
-    date = Column(Datetime, default=datetime.utcnow)  
+    date = Column(DateTime, default=datetime.utcnow)  
     title = Column(String, nullable=False)
     content = Column(String, nullable=False)
