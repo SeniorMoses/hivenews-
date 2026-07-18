@@ -1,4 +1,4 @@
-import Datetime 
+from datetime import datetime 
 from pydantic import BaseModel, EmailStr, field_validator
 from typing import List, Optional
 
@@ -24,13 +24,13 @@ class Signup(BaseModel):
         return pas
 
 class News(BaseModel):
-    date: Datetime 
+    date: datetime 
     title: str
     content: str
 
 class NewsResponse(BaseModel):
     id: int
-    date: Datetime
+    date: datetime 
     title: str
     content: str
 
